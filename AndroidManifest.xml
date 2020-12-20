@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.komal.twitter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/twitter"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/twitter"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Twitter">
+        <activity android:name=".Followers"></activity>
+        <activity android:name=".Following" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Add" />
+        <activity android:name=".HomePackage.Home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="bRwzEHko3QxdsYyxVyb3saa5wEONhx02fOruih38" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="r4ZVbBbjCyFO0gyoxv8it3JVaD5tKHCODhKCJia7" />
+    </application>
+
+</manifest>
